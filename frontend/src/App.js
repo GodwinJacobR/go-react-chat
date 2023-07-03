@@ -33,6 +33,7 @@ class App extends Component {
             <div className="App">
                 <Header></Header>
                 <ChatHistory chatHistory={this.state.chatHistory}></ChatHistory>
+                <ChatInput send={this.send} />
             </div>
         )
     }
