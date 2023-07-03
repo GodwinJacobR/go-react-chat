@@ -15,6 +15,7 @@ class App extends Component {
             chatHistory: []
         }
     }
+
     componentDidMount() {
         connect((msg) => {
            console.log("New message")
@@ -24,7 +25,7 @@ class App extends Component {
             }))
             console.log(this.state);
         })
-        
+
     }
 
     render() {
